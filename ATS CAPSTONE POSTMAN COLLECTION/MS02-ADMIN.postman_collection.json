@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "dc42461e-a9c9-473a-8ced-021028afc54d",
+		"name": "MS02-ADMIN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37369770"
+	},
+	"item": [
+		{
+			"name": "registerNewUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"varshi@gmail.com\",\r\n    \"password\": \"Vani@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/admin/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"admin",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

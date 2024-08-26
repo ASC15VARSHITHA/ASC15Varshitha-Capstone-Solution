@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "5c019ff3-3541-446f-85ce-c5161ac8c733",
+		"name": "MS04-AIRPORTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37369770"
+	},
+	"item": [
+		{
+			"name": "createairport",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"airportName\" : \"Bengaluru\",\r\n    \"countryCode\" : \"BLU\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8031/api/airports/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8031",
+					"path": [
+						"api",
+						"airports",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8031/api/airports/allairports",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8031",
+					"path": [
+						"api",
+						"airports",
+						"allairports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "searchBYId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8031/api/airports/search/A0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8031",
+					"path": [
+						"api",
+						"airports",
+						"search",
+						"A0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"airportName\": \"Bengaluru\",\r\n    \"countryCode\": \"BLR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8031/api/airports/update/A0004",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8031",
+					"path": [
+						"api",
+						"airports",
+						"update",
+						"A0004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8031/api/airports/delete/A0004",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8031",
+					"path": [
+						"api",
+						"airports",
+						"delete",
+						"A0004"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

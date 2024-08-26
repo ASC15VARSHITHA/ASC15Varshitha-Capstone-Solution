@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "aaf133b0-bf1e-41a8-b805-f7cd1e7231ea",
+		"name": "MS01-LOGIN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37369770"
+	},
+	"item": [
+		{
+			"name": "loginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"vani@gmail.com\",\r\n    \"password\": \"Vani@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/api/login/loginUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"login",
+						"loginUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

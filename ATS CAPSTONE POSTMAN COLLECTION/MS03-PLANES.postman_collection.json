@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "171b5e74-2f94-4aa0-91f1-cb6c44863d27",
+		"name": "MS03-PLANES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37369770"
+	},
+	"item": [
+		{
+			"name": "create-plane",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"planeCapacity\": 50,\r\n    \"planeCategory\": \"First Class\",\r\n    \"planeModel\": \"Air Bus\",\r\n    \"planeOperator\": \"Vistara\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8021/api/image/planes/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8021",
+					"path": [
+						"api",
+						"image",
+						"planes",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getByPlaneID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8021/api/image/planes/P0002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8021",
+					"path": [
+						"api",
+						"image",
+						"planes",
+						"P0002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allPlanes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8021/api/image/planes/allplanes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8021",
+					"path": [
+						"api",
+						"image",
+						"planes",
+						"allplanes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"planeCapacity\":50,\r\n    \"planeCategory\": \"First Class\",\r\n    \"planeModel\": \"Boeing\",\r\n    \"planeOperator\": \"Vistara\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8021/api/image/planes/update/P0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8021",
+					"path": [
+						"api",
+						"image",
+						"planes",
+						"update",
+						"P0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8021/api/image/planes/delete/P0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8021",
+					"path": [
+						"api",
+						"image",
+						"planes",
+						"delete",
+						"P0001"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
